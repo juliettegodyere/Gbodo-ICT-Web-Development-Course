@@ -1,1 +1,70 @@
-#INTRODUCTION TO CSS FUNDAMENTALS, RESPONSIVE WEB DESIGN, CSS ICONS
+INTRODUCTION TO CSS FUNDAMENTALS, RESPONSIVE WEB DESIGN, CSS ICONS
+
+Download file and follow along!
+Lecture 3, Week 3
+
+LAST TIME
+Intro to HTML Fundamentals
+HTML Images/Forms/Tables
+Built a simple project with HTML
+
+TODAY
+How CSS describes the elements displayed by HTML
+How HTML and CSS can help make a website look good on all devices (desktops, tablets, and phones)
+How to customize and use icons during web design
+
+CSS
+CSS stands for Cascading Style Sheets. It describes how HTML elements are to be displayed.
+
+CSS Syntax
+A CSS rule consists of a selector and a declaration block
+
+`h1 {font-size:32px; color:red; text-align:center;}
+
+The selector points to the HTML element to style (h1)
+The declaration block (in curly braces) contains one or more declarations separated by semicolons (;). Each declaration includes a CSS property “name” or “property” and a “value”, separated by a colon (:).
+Examples
+
+`<style>
+`p {font-size:32px; color:red; text-align:center;}
+`</style>
+
+Or can also be reformatted as such for readability.
+
+<style>
+p {
+		font-size: 32px;
+		color: red;
+		text-align: center;
+}
+</style>
+
+External Style Sheet
+A CSS style sheet can be stored in an external file e.g mystyle.css. The external style sheets are linked to HTML pages with <link> tags.
+External file (mystyle.css)
+body {background-color: orange; font-family:verdana}
+h1 {color: white;}
+p {font-size: 20px;}
+HTML file (myhtml.html)
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="mystyle.css">
+<body>
+<h1>My First CSS Example</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+Inline Style
+The CSS style is added directly into the HTML elements.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p style="font-size:25px">This is a paragraph.</p>
+<p style="font-size:30px">This is a paragraph.</p>
+</body>
+</html>
+Cascading Order
+If different styles are specified for HTML elements, the styles will cascade into new styles with the following priority:
+Priority 1: Inline styles 
+Priority 2: External and internal style sheets

@@ -1,2 +1,2 @@
 # Gbodo-ICT-Web-Development-Course
-This repo with house all the example codes during the course of the training
+This repo will contain all the example codes during the course of the web development training

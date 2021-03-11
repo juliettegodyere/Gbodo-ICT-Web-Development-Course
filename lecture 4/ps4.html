@@ -1,0 +1,103 @@
+<!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog -->
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidebar_responsive -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="ps4.css">
+  <script src="search.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <a href="#login">Sign in</a>
+    <a href="#register">Register</a>
+   <div style="float:right;">
+    <a href="#">Ship to</a>
+    <a href="#" >Sell</a>
+    <a href="#" >Watchlist</a>
+    <a href="#"><i class="fa fa-fw fa-bell"></i></a>
+    <a href="#"><i class="fa fa-fw fa-cart-plus"></i></a>
+   </div>
+  </div>
+  <div class="topnav">
+    <a href="#default" class="logo"><img id="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/9/90/Comodo-Dragon-logo-256x256.png"></a>
+    <form action="/action_page.php" class="form">
+      <input type="search" placeholder="Search for anything ..." id="searchbar" onkeyup="search_animal()" name="gsearch" class="input">
+      <input type="submit" class="submit">
+    </form>
+  </div>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Auto Mobile</h2>
+        <h5>by shop Category</h5>
+        <div>
+          <a class="" href="#home">Virtual Reality Headsets, Parts & Accessories</a>
+          <a href="#news">Consumer Electronics Mixed Lots</a>
+          <a href="#contact">Surveillance & Smart Home Electronics</a>
+          <a href="#about">Multipurpose Batteries & Power</a>
+          <a class="" href="#home">Vehicle Electronics & GPS</a>
+          <a href="#news">Radio Communication Electronics</a>
+          <a href="#contact">Smart Home</a>
+          <a href="#about">Cameras & Photo</a>
+        </div>          
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>Shop by Category</h2>
+        <ol id='list'> 
+          <li class="animals">Cat</li> 
+          <li class="animals">Dog</li> 
+          <li class="animals">Elephant</li> 
+          <li class="animals">Fish</li> 
+          <li class="animals">Gorilla</li> 
+          <li class="animals">Monkey</li> 
+          <li class="animals">Turtle</li> 
+          <li class="animals">Whale</li> 
+          <li class="animals">Aligator</li> 
+          <li class="animals">Donkey</li> 
+          <li class="animals">Horse</li> 
+      </ol> 
+        
+      </div>
+      <!-- <div class="card">
+        <h3>Popular Post</h3>
+        <div class="fakeimg">
+          <p>Image</p>
+        </div>
+        <div class="fakeimg">
+          <p>Image</p>
+        </div>
+        <div class="fakeimg">
+          <p>Image</p>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>Some text..</p>
+      </div> -->
+    </div>
+  </div>
+  <div id="footer">
+      <a href="#">About Holly</a>
+      <a href="#" >Anouncements</a>
+      <a href="#" >Community</a>
+      <a href="#">Security Center</a>
+      <a href="#" >Resolution Center</a>
+      <a href="#" >Information center</a>
+      <a href="#">Policies</a>
+      <a href="#" >Help & Contact</a>
+      <a href="#" >Site Map</a> <br>
+
+      <!-- <div >
+        <p>Copyright © 1995-2021 eBay Inc. All Rights Reserved.</p>
+      </div> -->
+  </div>
+</body>
+
+</html>

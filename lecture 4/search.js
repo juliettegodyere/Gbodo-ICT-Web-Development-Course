@@ -1,15 +1,20 @@
 
 //https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
-function search_animal() { 
-    let input = document.getElementById('searchbar').value 
+function search_vehicles() { 
+    let input = document.getElementById('searchbar').value
     input=input.toLowerCase(); 
-    let x = document.getElementsByClassName('animals'); 
-    for (i = 0; i < x.length; i++) {  
-        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
-            x[i].style.display="none"; 
+    let vehicle_values = document.getElementsByClassName('vehicles'); 
+    for (i = 0; i < vehicle_values.length; i++) {  
+        if (!vehicle_values[i].innerHTML.toLowerCase().includes(input)) { 
+            vehicle_values[i].style.display="none"; 
         } 
         else { 
-            x[i].style.display="list-item";                  
+            vehicle_values[i].style.display="list-item";                  
         } 
     } 
 } 
+function length(){
+
+}
+var arr = ["jane", "mary"]
+arr.length

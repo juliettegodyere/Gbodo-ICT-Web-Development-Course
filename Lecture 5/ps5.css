@@ -74,6 +74,9 @@
                 border: 0px;
                 border-radius: 2px; 
             }
+            #category{
+              padding-left: 10px;
+            }
             .topnav {
                 overflow: hidden;
                 background-color:white;
@@ -124,7 +127,7 @@
               .row{
                 padding-left: 300px;
                 padding-right: 300px;
-                  margin-top: 0;
+                  margin-top: 10px;
               }
               /* Fake image */
               .fakeimg {
@@ -185,6 +188,7 @@
        
                 width: 100%;
                 padding: 10px;
+                padding-top: 20px;
             }
             
             /* Remove extra left and right margins, due to padding */
@@ -208,17 +212,22 @@
                 display: block;
                 margin-bottom: 20px;
                 }
+                #category{
+                  padding-left: 10px;
+                }
             }
             
             /* Style the counter cards */
             .mainCard {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                padding: 16px;
+                padding: 10px;
                 text-align: center;
                 background-color: #ffffff;
                 transition: 0.3s;
-                border-radius:5px
-                /* width: 40%; */
+                border-radius: 5px /* width: 40%; */;
+                height: 180px;
+                width:100%;
+            
             }
             #footer{
                 background-color:white;
@@ -256,6 +265,9 @@
             @media screen and (max-width: 800px) {
               .right-menu{
                 display: block;
+              }
+              #category{
+                padding-left: 10px;
               }
                 .leftcolumn,  .topnav {   
                 width: 100%;
@@ -344,6 +356,16 @@
                  /* width: 100%; */
                   padding:5px
               }
+              .mainCard {
+                box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+                padding: 10px;
+                text-align: center;
+                background-color: #ffffff;
+                transition: 0.3s;
+                border-radius: 5px /* width: 40%; */;
+                height: auto;
+                width: 100%;
+            }
                 
             }
             
@@ -382,6 +404,45 @@
                 height: 30px;
             }
           }
+          @media (min-width: 801px) and (max-width: 1200px) {
+            .header{
+              background-color:white;
+              /* width:100%; */
+              text-align: center;
+              border-top: 1px solid;
+              border-bottom: 1px solid;
+              border-color:lightgray;
+              overflow: hidden;
+              font-size:12px;
+              /* height:40px; */
+              padding-left: 150px;
+              padding-right: 150px;
+          }
+          .header a {
+              float: left;
+              display: block;
+              color: #333;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+          }
+            #search-bar {
+              display: none;
+          
+          }
+          #mainTopRow{
+            display: grid;
+            grid-template-columns: auto auto auto;
+          }
+          .row {
+            padding-left: 200px;
+            padding-right: 200px;
+            margin-top: 0;
+        }
+        .input{
+          width: 400px;
+        }
+        }
             body {
                 font-family: Helvetica;
               }

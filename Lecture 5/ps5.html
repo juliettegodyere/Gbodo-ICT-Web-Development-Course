@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <body>
+
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet"
@@ -8,16 +10,42 @@
         <link rel="stylesheet" href="ps5.css">
         <script src="ps5.js"></script>
     </head>
+
     <body>
-        <div class="header">
+        <div class="container">
+           
+            <div class="right-menu">
+               
+                <div class="menu-icon" id="menu" onclick="menuIcon()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="search" id="search">
+                <form action="/action_page.php" class="form">
+                    <input type="search" placeholder="Search for anything ..." id="search-bar" onkeyup="search_vehicles()"
+                        name="gsearch" class="input">
+                   
+                </form>
+            </div>
+        </div>
+        
+        
+       
+
+        <div class="header" id="header">
             <a href="#login">Sign in</a>
             <a href="#register">Register</a>
-            <div style="float:right;">
+            <div class="links">
                 <a href="#">Ship to</a>
                 <a href="#">Sell</a>
                 <a href="#">Watchlist</a>
-                <a href="#"><i class="fa fa-fw fa-bell"></i></a>
-                <a href="#"><i class="fa fa-fw fa-cart-plus"></i></a>
+                <div class="icons">
+                    <a href="#"><i class="fa fa-fw fa-bell"></i></a>
+                    <a href="#"><i class="fa fa-fw fa-cart-plus"></i></a>
+                </div>
+
             </div>
         </div>
         <div class="topnav">
@@ -84,16 +112,16 @@
             '{"name":"Porsche Boxster","category":"Coupe", "img":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2021-porsche-718-cayman-mmp-1-1593003156.jpg?crop=0.833xw:0.703xh;0.0801xw,0.235xh&resize=2048:*" },' +
             '{"name":"Honda Civic","category":"Sedan", "img":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-honda-civic-sedan-1558453497.jpg?crop=1xw:0.9997727789138833xh;center,top&resize=980:*"},' +
             '{"name":"Dodge Challenger","category":"Sports Car", "img":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2021-dodge-challenger-mmp-1-1599685173.jpg?crop=0.979xw:1.00xh;0.0160xw,0&resize=2048:*" }]}';
-
-        obj = JSON.parse(text);
+       
+      obj = JSON.parse(text);
         var str = ""
         obj.vehicles.map((e, i) => {
-            str+="<div class='column'>" +
+            str += "<div class='column'>" +
                 "<div class='mainCard'>" +
                 "<img src=" + e.img + " alt='Avatar' style='width:100%'/>" +
                 "<div class='mainCardContainer'>" +
-                "<h4><b>" + e.name + "</b></h4>" +
-                "<p>" + e.category + "</p>" +
+                "<h6><b>" + e.name + "</b></h6>" +
+                "<p class='pi' >" + e.category + "</p>" +
                 "</div>" +
                 "</div>" +
                 "</div>";

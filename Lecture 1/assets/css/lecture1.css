@@ -1,0 +1,43 @@
+body {
+  background-color: lightblue;
+  text-align: center;
+}
+h1 {
+  color: blue;
+  font-size: 40px;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing {
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

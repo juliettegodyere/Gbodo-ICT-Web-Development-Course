@@ -88,6 +88,8 @@
         obj = JSON.parse(text);
         var str = ""
         obj.vehicles.map((e, i) => {
+            var fname = "Juliet";
+            var sname = "Nkwor";
             str+="<div class='column'>" +
                 "<div class='mainCard'>" +
                 "<img src=" + e.img + " alt='Avatar' style='width:100%'/>" +
@@ -98,6 +100,7 @@
                 "</div>" +
                 "</div>";
         })
+        
         document.getElementById("mainTopRow").innerHTML = str
     </script>
 </body>

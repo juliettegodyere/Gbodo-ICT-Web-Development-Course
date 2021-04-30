@@ -1,0 +1,37 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.display--none {
+  display: none !important;
+}
+
+button#show_form {
+  margin-bottom: 1rem;
+  float: right;
+}
+
+.sn {
+  width: 2%;
+}
+
+div#form {
+  width: 500px;
+  margin: auto;
+  box-shadow: 0 3px 24px 0 rgba(37, 56, 88, 0.5);
+  padding: 1rem;
+  border-radius: 5px;
+}

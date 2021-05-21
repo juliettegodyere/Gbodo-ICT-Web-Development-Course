@@ -1,0 +1,67 @@
+body {
+  max-width: 900px;
+  margin: auto;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  max-width: 140px;
+  height: 40px;
+  outline: deepskyblue;
+  border: none;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn:hover {
+  color: #0984e3 !important;
+  background-color: #fff !important;
+  border: 2px solid #0984e3 !important;
+}
+
+.btn.hide {
+  background-color: #55efc4;
+}
+
+.btn.show {
+  background-color: #ff7675;
+}
+
+.btn.toggle {
+  background-color: #ffeaa7;
+}
+
+.btn.fadeIn {
+  background-color: #fab1a0;
+}
+
+.btn.fadeInSlow {
+  background-color: #e17055;
+}
+
+.btn.fadeInNum {
+  background-color: #74b9ff;
+}
+
+.btn.fadeOut {
+  background-color: #a29bfe;
+}
+
+.btn.fadeOutSlow {
+  background-color: #0984e3;
+}
+
+.btn.fadeOutNum {
+  background-color: #b2bec3;
+}
+
+.dem {
+  margin-bottom: 25px;
+}
